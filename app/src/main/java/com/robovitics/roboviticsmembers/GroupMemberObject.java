@@ -10,12 +10,12 @@ public class GroupMemberObject {
      * Year(Fourth,Third or Second)
      */
     private String mName;
-    private String mPost;
+    private int mImg = 0;
     private String mYear;
 
-    public GroupMemberObject(String vName, String vPost, String vYear){
+    public GroupMemberObject(String vName, String vYear, int vImg){
         mName = vName;
-        mPost = vPost;
+        mImg = vImg;
         mYear = vYear;
     }
 
@@ -23,10 +23,10 @@ public class GroupMemberObject {
         return mName;
     }
 
-    public String getPost(){
-        return mPost;
+    public int getImg(){
+        return mImg;
     }
-    
+
     public String getYear(){
         return mYear;
     }
